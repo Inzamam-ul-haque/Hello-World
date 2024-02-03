@@ -1,0 +1,72 @@
+.hw-hero {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    padding-top: 130px;
+    padding-bottom: $spacer-5;
+
+    &__outer {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        &-desc {
+            margin-bottom: $spacer-4;
+            p {
+                font-size: 18px;
+                font-weight: 400;
+                color: var(--clr-hero-txt);
+            }
+        }
+
+        &-cta {
+            display: flex;
+            width: 100%;
+            margin: 0 -24px;
+
+            .hw-btn {
+                width: 200px;
+                margin: $spacer-0 $spacer-4;
+            }
+        }
+        
+    }
+}
+
+@include tablet-pro {
+    .hw-hero {
+        &__outer {
+            .hw-heading__txt {
+                width: 75%;
+            }
+        }
+    }
+}
+
+@include tablet {
+    .hw-hero {
+        padding-top: $spacer-3;
+        &__outer {
+            width: 100%;
+        }
+    }
+}
+
+@include mobile {
+    .hw-hero {
+        padding-top: $spacer-3;
+        &__outer {
+            width: 100%;
+
+            &-cta {
+                flex-direction: column;
+                .hw-btn {
+                    margin-bottom: $spacer-4;
+                }
+            }
+        }
+    }
+}

@@ -8,9 +8,14 @@
 @import "./base/dev";
 
 // atoms
-
+@import "atoms/button";
+@import "atoms/heading";
 // molecule
-
+@import "molecules/success-story-tile";
+@import "molecules/students";
+@import "molecules/sidebar";
 // organisms
-
+@import "organisms/header";
+@import "organisms/hero";
+@import "organisms/footer";
 // pages

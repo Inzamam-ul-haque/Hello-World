@@ -1,0 +1,32 @@
+.hw-studnts-sec {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: $spacer-4;
+
+    &__left {
+        margin-right: $spacer-4;
+        &-num {
+            font-size: 35px;
+            font-weight: 400;
+            color: var(--clr-black);
+            margin-bottom: $spacer-2;
+        }
+
+        &-txt {
+            font-size: 20px;
+            font-weight: 400px;
+            color: var(--clr-black);
+            width: 70%;
+        }
+    }
+
+    &__right {
+        width: 40%;
+        height: auto;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}

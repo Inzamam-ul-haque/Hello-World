@@ -1,0 +1,42 @@
+.hw-footer {
+    width: 100%;
+    background-color: var(--clr-footer-bg);
+    padding: 22px $spacer-0;
+
+    &__outer {
+        width: 60%;
+
+        &-wrap {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+
+            .hw-success-tile {
+                width: calc(33.3% - 32px);
+                margin: $spacer-0 $spacer-3;
+            }
+        }
+    }
+}
+
+@include tablet {
+    .hw-footer {
+        &__outer {
+            width: 100%;
+        }
+    }
+}
+
+@include mobile {
+    .hw-footer {
+        &__outer {
+            width: 100%;
+
+            &-wrap {
+                .hw-success-tile {
+                    width: calc(100% - 32px);
+                }
+            }
+        }
+    }
+}

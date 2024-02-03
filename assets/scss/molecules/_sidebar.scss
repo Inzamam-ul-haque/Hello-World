@@ -1,0 +1,65 @@
+.hw-sidebar {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: auto;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: $spacer-5;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    &__img {
+        width: calc(50% - 32px);
+        margin: $spacer-3;
+        height: auto;
+        border-radius: 10px;
+        overflow: hidden;
+        img {
+            width: 100%;
+            height: auto;
+            display: flex;
+        }
+
+        &--crcl {
+            border-radius: 50%;
+        }
+        &--lft-rd {
+            border-radius: 50% 10px 10px 50%;
+        }
+        &--rgt-rd {
+            border-radius: 10px 100% 10px 10px;
+        }
+    }
+}
+
+
+@include tablet-pro {
+    .hw-sidebar {
+        min-height: 775px;
+    }
+}
+
+@include tablet {
+    .hw-sidebar {
+        width: 100%;
+        position: inherit;
+        &__img {
+            width: calc(33.3% - 32px);
+        }
+    }
+}
+
+@include mobile {
+    .hw-sidebar {
+        width: 100%;
+        position: inherit;
+        &__img {
+            width: calc(100% - 32px);
+        }
+    }
+}
